@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    android:background="@color/colorBlack">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/moviebg"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prisijungimo vardas"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextWhite"
+        android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:textSize="12dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:textColor="@color/colorTextWhite"
+        android:backgroundTint="@color/colorTint"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slaptažodis"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextWhite"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:textColor="@color/colorTextWhite"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorTint"
+       />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <CheckBox
+        android:id="@+id/rememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Prisiminti mane"
+        android:textColor="@color/colorTextWhite" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundshapebtn"
+            android:text="Prisijungti" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundshapebtn"
+            android:text="Registruotis" />
+
+    </LinearLayout>
+</LinearLayout>

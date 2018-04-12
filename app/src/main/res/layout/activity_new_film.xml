@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/regbg2">
+
+    <include
+        layout="@layout/toolbar_layout">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Pavadinimas:"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:hint="Filmo pavadinimas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Režisierius:"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etDirector"
+                        android:hint="Režisierius"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Aktoriai:"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:id="@+id/etActors"
+                        android:hint=" ( įrašykite brūkšnelį, jeigu nėra )"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="Žanras (-ai):"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvGenre"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                            <CheckBox
+                                android:id="@+id/cbAnimacija"
+                                android:text="Animacija"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbDokumentika"
+                                android:text="Dokumentika"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbVeiksmo"
+                                android:text="Veiksmo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbSiaubo"
+                                android:text="Siaubo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbKomedija"
+                                android:text="Komedija"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                            <CheckBox
+                                android:id="@+id/cbFantastinis"
+                                android:text="Fantastinis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbDrama"
+                                android:text="Drama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbIstorinis"
+                                android:text="Istorinis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <CheckBox
+                                android:id="@+id/cbLietuviškas"
+                                android:text="Lietuviškas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        <CheckBox
+                            android:id="@+id/cbTrileris"
+                            android:text="Trileris"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                    <TextView
+                        android:textColor="@color/colorBlack"
+                        android:text="Filmo įvertinimas:"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <RadioGroup
+                            android:id="@+id/rbGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="-5dp">
+
+                                <RadioButton
+                                    android:checked="true"
+                                    android:id="@+id/rbNoVote"
+                                    android:text="Nebalsuoti"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbBest"
+                                    android:text="Puikus"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbGood"
+                                    android:text="Geras"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rbBad"
+                                    android:text="Prastas"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:text="Kinuose nuo:"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Kinuose nuo (yyyy-MM-dd)"
+                        android:inputType="date"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:text="Trukmė:"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/etLength"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Trukmė minutėmis"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <TextView
+                    android:text="Cenzas:"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:layout_height="0dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight=".28"
+                    android:background="@drawable/spinnerbg"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp">
+
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="left"
+                        android:src="@drawable/spindrop"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnAdd"
+                        android:text="Pridėti filmą"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundshapebtn"
+                        android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

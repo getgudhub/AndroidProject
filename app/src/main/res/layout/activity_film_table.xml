@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        layout="@layout/toolbar_layout">
+    </include>
+
+    <RelativeLayout
+        android:background="@drawable/regbg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/film_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="45dp">
+
+        </android.support.v7.widget.RecyclerView>
+        <Button
+            android:id="@+id/btnPrideti"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:text="Pridėti filmą" />
+    </RelativeLayout>
+
+</LinearLayout>

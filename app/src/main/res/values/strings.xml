@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cinema Films</string>
+
+    <string name="login_label">Cinema Films</string>
+    <string name="register_label">Naujas vartotojas</string>
+    <string name="rework_label">Redagavimas</string>
+    <string name="new_entry_label">Naujas įrašas</string>
+    <string name="search_label">Paieška</string>
+    <string name="film_table">Filmų lentelė</string>
+
+    <string name="login_invalid_username">Klaidingai įvestas prisijungimo vardas</string>
+    <string name="login_invalid_password">Klaidingai įvestas slaptažodis</string>
+
+    <string name="invalid_username">Netinkamas vardas</string>
+    <string name="invalid_password">Netinkamas slaptažodis</string>
+    <string name="invalid_passwordR">Nevienodi slaptažodžiai</string>
+    <string name="invalid_email">Netinkamas el. paštas</string>
+
+    <string name="invalid_name">Netinkamas pavadinimas</string>
+    <string name="invalid_director">Netinkamas pavadinimas</string>
+    <string name="invalid_actors">Netinkamai surašyti aktoriai</string>
+    <string name="invalid_length">Filmo trukmę parašykite minutėmis</string>
+    <string name="invalid_date">Netinkama data</string>
+    <string name="invalid_genre">Pasirinkite bent vieną žanrą</string>
+
+    <string name="vartotojas">Vartotojas: </string>
+
+</resources>

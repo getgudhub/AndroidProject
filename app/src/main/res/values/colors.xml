@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorForSpinner">#c9b64c</color>
+    <color name="colorCardViewBg">#facfb4</color>
+    <color name="colorBG">#e4592a01</color>
+    <color name="colorPrimary">#394fca</color>
+    <color name="colorPrimaryDark">#161f59</color>
+    <color name="colorAccent">#500e24</color>
+    <color name="colorTextWhite">#ffffff</color>
+    <color name="colorTint">#8216aba8</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorToolbar">#8216aba8</color>
+    <color name="colorCorner">#8ede9464</color>
+</resources>

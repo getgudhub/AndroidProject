@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regbg2">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prisijungimo vardas"
+        android:textAllCaps="true"
+        android:fontFamily="serif"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="priSIJungimoVard45"
+        android:fontFamily="serif-monospace"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slaptažodis"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="5L4pt4zod15"
+        android:fontFamily="serif-monospace"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Slaptažodžio pakartojimas"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/passwordR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Slaptažodžio pakartojimas"
+        android:fontFamily="serif-monospace"
+        android:maxLines="1"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="El. paštas"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="vartotojas22@mail.com"
+        android:fontFamily="serif-monospace"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Registruotis"
+        android:layout_gravity="center"
+        android:background="@drawable/roundshapebtn"/>
+
+</LinearLayout>
